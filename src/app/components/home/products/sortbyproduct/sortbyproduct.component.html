@@ -1,0 +1,33 @@
+<div class="aa-product-catg-head">
+    <div class="aa-product-catg-head-left">
+
+      <div class="col-md-12 sortBy">
+        <span>Sort By</span>
+        <ul #selectSort>
+          <li *ngFor="let ty of type; let i = index" (click)="sortByFunc($event, i)">{{ty}}</li>
+        </ul>
+      </div>
+
+      <form action="" class="aa-sort-form">
+        <label for="">Sort by</label>
+        <select name="">
+          <option value="1" selected="Default">Default</option>
+          <option value="2">Name</option>
+          <option value="3">Price</option>
+          <option value="4">Date</option>
+        </select>
+      </form>
+      <form action="" class="aa-show-form">
+        <label for="">Show</label>
+        <select name="">
+          <option value="1" selected="12">12</option>
+          <option value="2">24</option>
+          <option value="3">36</option>
+        </select>
+      </form>
+    </div>
+    <div class="aa-product-catg-head-right">
+      <a id="grid-catg" href="#"><span class="fa fa-th"></span></a>
+      <a id="list-catg" href="#"><span class="fa fa-list"></span></a>
+    </div>
+  </div>
